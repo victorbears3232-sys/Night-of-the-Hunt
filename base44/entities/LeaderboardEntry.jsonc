@@ -1,0 +1,51 @@
+{
+  "name": "LeaderboardEntry",
+  "type": "object",
+  "properties": {
+    "player_name": {
+      "type": "string"
+    },
+    "player_id": {
+      "type": "string"
+    },
+    "achievement_count": {
+      "type": "number",
+      "default": 0
+    },
+    "total": {
+      "type": "number",
+      "default": 36
+    },
+    "earned_ids": {
+      "type": "string",
+      "default": ""
+    },
+    "best_time_ms": {
+      "type": "number"
+    },
+    "deaths": {
+      "type": "number",
+      "default": 0
+    },
+    "completion_time_ms": {
+      "type": "number"
+    },
+    "completed_at": {
+      "type": "string"
+    },
+    "ng_plus": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "player_name",
+    "player_id"
+  ],
+  "rls": {
+    "read": {},
+    "create": false,
+    "update": false,
+    "delete": false
+  }
+}
